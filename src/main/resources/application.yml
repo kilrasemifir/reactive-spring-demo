@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    hibernate:
+      # Definie si l'application va créer la base de données ou non
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/commandes?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useLocalSessionState=true
+    username: root
+    password: root
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/commandes?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useLocalSessionState=true
+    username: root
+    password: root
+
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
