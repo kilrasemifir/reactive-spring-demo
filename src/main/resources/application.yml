@@ -17,3 +17,7 @@ spring:
     r2dbc:
       repositories:
         enabled: true
+
+springdoc:
+  api-docs:
+    path: "/api-docs"
